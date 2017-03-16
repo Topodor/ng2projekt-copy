@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+   background-color:rgba(245, 245, 245, 0.15);
+}
+
+.card .card-content {
+    padding: 10px 20px;
+}
+span.badge {
+    line-height: 40px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 0 10px;
+}
+.card .card-action {
+    background-color: inherit;
+    padding: 0px 20px;
+}
+.card .card-action .header {
+    font-weight: bold;
+    color: #808080;
+    margin: 2px 0;
+}
+.card .card-action .lessInfo{
+    margin: 2px 0;
+    font-size: .8rem;
+}
+
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+    margin-bottom: 2px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+.list-group-item img {
+    width: 250px;
+    height: 200px;
+}
+p .push-down {
+    margin-top: 2px !important;
+} 

@@ -1,0 +1,13 @@
+.dropdown h1{
+    display: inline-block;
+    margin: 0;
+}
+.dropdown .btn {
+    margin-left: 20px;
+    float: right;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    float: left !important;
+}

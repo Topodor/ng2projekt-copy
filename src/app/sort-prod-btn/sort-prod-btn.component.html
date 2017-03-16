@@ -1,0 +1,13 @@
+<div class="container sort-container">
+  <div class="dropdown">
+  <h1><small>{{mYtext}}</small></h1>
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sorted by: 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu right">
+      <li (click)="performSort('none')"><a [routerLink]="['']">None</a></li>
+      <li (click)="performSort('pris-')"><a [routerLink]="['/pris-highest']">Highest Price</a></li>
+      <li (click)="performSort('pris+')"><a [routerLink]="['/pris-lowest']" >Lowest Price</a></li>
+      <li (click)="performSort('inStock')"><a [routerLink]="['/in-stock']">In stock</a></li>
+    </ul>
+  </div>
+</div>

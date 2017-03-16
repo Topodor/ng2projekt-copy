@@ -1,0 +1,31 @@
+  <div class="container">
+    <div class="row">
+          <div class="list-group">
+            <div *ngFor="let product of products | orderBy: ['+consumerPrice']" class="col s12 m6" (click)="onSelect(product)">
+              <a href="#" class="list-group-item">
+                    <div class="media col-md-3">
+                        <figure class="pull-left">
+                            <img class="media-object img-rounded img-responsive"  src="{{product.imageUrl}}" alt="{{product.name}}" >
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="list-group-item-heading">
+                           {{product.name}} 
+                          <span *ngIf="product.inStock"> 
+                            <span class="badge">Sold Out</span>
+                          </span>
+                        </h4>
+                        <p class="list-group-item-text">{{product.description}}</p>
+                        <p class="list-group-item-text push-down"> Manufacturer: {{product.manufacturer}} </p>
+                        <p class="list-group-item-text">Watt: {{product.watt}} | Weight(gram): {{product.weightInGram}}</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h2> {{product.consumerPrice | currency: 'SEK':true:'1.2-2'}} </h2>
+                        <button type="button" class="btn btn-default btn-lg btn-block"> Buy Now! </button>
+                        <p> Average 4.5 <small> / </small> 5 </p>
+                    </div>
+              </a>
+            </div>
+          </div>
+	</div>
+</div>
